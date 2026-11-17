@@ -15,7 +15,7 @@ export function apiCall(type, body) {
         options: {
             headers: {
                 accept: 'application/json',
-                authorization: 'Basic dW5kZWZpbmVkOnVuZGVmaW5lZA==',
+                authorization: 'Basic ' + Buffer.from('undefined:undefined').toString('base64'),
                 'content-type': 'application/json'
             }
         }
